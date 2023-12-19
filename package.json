@@ -1,0 +1,56 @@
+{
+  "name": "backend_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "dev-start": "nodemon",
+    "start": "node -r @babel/register ./src/index.js",
+    "sequelize:migrate": "npx sequelize db:migrate --env local"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/register": "^7.22.15",
+    "auto-bind": "^5.0.1",
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^1.41.0",
+    "dotenv": "^16.3.1",
+    "esm": "^3.2.25",
+    "esm-module-alias": "^2.1.0",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
+    "mongodb": "^6.3.0",
+    "mongoos": "^0.0.1-security",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "node": "^19.8.1",
+    "pg": "^8.11.3",
+    "sequelize": "^6.35.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.1",
+    "sequelize-cli": "^6.6.2"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@src": "src",
+    "@tests": "tests",
+    "@crons": "src/crons",
+    "@config": "src/config",
+    "@loaders": "src/loaders",
+    "@modules": "src/modules",
+    "@services": "src/services",
+    "@helpers": "src/helpers",
+    "@utils": "src/utils",
+    "@models": "src/db/models",
+    "@docs": "src/docs",
+    "@errors": "src/errors"
+  }
+}
